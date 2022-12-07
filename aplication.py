@@ -9,10 +9,11 @@ def insertaFrase():
 
 def eliminaVocales(frase):
        vocales = "aeiou"
+       nFrase = ""
        for letra in frase:
-              if letra.lower() == vocales:
-                     frase -= frase[letra]
-       return frase
+              if not letra.lower() in vocales:
+                     nFrase += letra
+       return nFrase
 
 def ordenaReves(frase):
        nFrase = ""
@@ -21,6 +22,8 @@ def ordenaReves(frase):
        return nFrase
 
 
+frase = insertaFrase()
+print(eliminaVocales(frase))
 
 
 
