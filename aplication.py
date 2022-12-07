@@ -4,8 +4,12 @@ menu = "1. Introdueix una frase \n2. Elimina les vocals \n3. Elimina les consona
 
 
 
-
-
-
+def eliminarcons(frase):
+       voc = "aiueo"
+       resultado = ""
+       for i in frase:
+              if i in voc or i == " " or i.isdigit():
+                     resultado += i
+       return resultado
 
 
