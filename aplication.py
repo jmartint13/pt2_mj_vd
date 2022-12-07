@@ -18,7 +18,7 @@ def ordenaReves(frase):
        nFrase = ""
        for letra in range(0, len(frase), -1):
               nFrase += frase[letra]
-
+       return nFrase
 
 
 
