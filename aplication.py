@@ -12,4 +12,18 @@ def eliminarcons(frase):
                      resultado += i
        return resultado
 
-
+def ordenasc(frase):
+       resulado = []
+       palabra = ""
+       for i in frase:
+              if i !=" ":
+                     palabra += i
+              else:
+                     resulado.append(palabra)
+                     palabra = ""
+       for pasada in range(len(resulado)-1):
+              for palabra in range(len(resulado)-pasada-1):
+                     if resulado[palabra].lower() > resulado[palabra +1].lower():
+                            resulado[palabra], resulado[palabra + 1] = resulado[palabra+1], resulado[palabra]
+       for i in resulado:
+              print(i)
