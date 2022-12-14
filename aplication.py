@@ -34,6 +34,7 @@ def eliminarcons(frase):
 
 
 def ordenasc(frase):
+    frase = frase +" "
     resulado = []
     palabra = ""
     for i in frase:
